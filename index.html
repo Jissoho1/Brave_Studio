@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استوديو Brave - صناعة المحتوى</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a0d05;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff9800, #e65100);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            max-width: 50px;
+            margin-left: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(197, 118, 0, 0.5);
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 152, 0, 0.15);
+        }
+
+        .welcome-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(255, 152, 0, 0.2), rgba(230, 81, 0, 0.2));
+            padding: 30px 20px;
+        }
+
+        .welcome-section .character-image {
+            width: 250px;
+            height: 250px;
+            margin-left: 20px;
+        }
+
+        .welcome-text {
+            max-width: 500px;
+            text-align: right;
+        }
+
+        h2 {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        .video iframe {
+            width: 100%;
+            height: 400px;
+            max-width: 700px;
+            border-radius: 10px;
+        }
+
+        .team-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .member {
+            background: #ff9800;
+            color: #1a0d05;
+            padding: 10px;
+            border-radius: 10px;
+            width: 150px;
+            text-align: center;
+        }
+
+        .member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            color: white;
+            font-size: 24px;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            opacity: 0.8;
+        }
+
+        .instagram { background: #E4405F; }
+        .youtube { background: #FF0000; }
+        .discord { background: #5865F2; }
+
+        footer {
+            background: #1a0d05;
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .team-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .video iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="brv.png" alt="شعار استوديو Brave">
+            <h1>استوديو Brave</h1>
+        </div>
+        <nav>
+            <a href="#about">من نحن</a>
+            <a href="#team">فريقنا</a>
+            <a href="#gallery">أعمالنا</a>
+            <a href="#contact">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <section class="welcome-section">
+        <img src="jiso2.webp" alt="جيسوهو" class="character-image">
+        <div class="welcome-text">
+            <h2>مرحبًا بكم في استوديو Brave!</h2>
+            <p>أهلًا وسهلًا بكم في عالمنا الإبداعي! نحن فريق Brave نرحب بكم بحماس وشغف. سنأخذكم في رحلة مثيرة من المحتوى الرائع والتجارب الفريدة.</p>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>من نحن</h2>
+        <p>نحن فريق Brave لصناعة المحتوى، نبدع في إنتاج الفيديوهات الاحترافية وصناعة المحتوى الإبداعي.</p>
+    </section>
+
+    <section id="gallery" class="container">
+        <h2>أعمالنا</h2>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/N5fw9yQ5HUk" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="team" class="container">
+        <h2>فريقنا</h2>
+        <div class="team-grid">
+            <div class="member">
+                <img src="channels4_profile (3).jpg" alt="وسيم">
+                <h3>وسيم</h3>
+            </div>
+            <div class="member">
+                <img src="144_20241225202325-1.webp" alt="ريان">
+                <h3>ريان</h3>
+            </div>
+            <div class="member">
+                <img src="channels4_profile (5).jpg" alt="سكرين">
+                <h3>سكرين</h3>
+            </div>
+            <div class="member">
+                <img src="2025_03_04_0kb_Kleki.png" alt="جيسو">
+                <h3>جيسوهو</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>تواصل معنا</h2>
+        <div class="social-links">
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="discord"><i class="fab fa-discord"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 استوديو Brave. جميع الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+</html>
